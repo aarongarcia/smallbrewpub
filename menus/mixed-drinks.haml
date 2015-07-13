@@ -1,0 +1,74 @@
+<!-- $title Small Brewpub, Oak Cliff, TX | Cocktail Menu -->
+<!-- $author Aaron Garcia | http://aarongarcia.com -->
+
+!!! 5
+
+%html{"dir" => "ltr", :lang => "en"}	
+	<!-- @include _head -->
+	%body#menu-cocktail
+		%div.container
+			%div.grid.full
+				%div.line
+		%div.container
+			// nav
+			%div.grid.half
+				<!-- @include _main-nav -->
+		%div.container
+			%div.grid.half
+				%div.line.nav-respond
+				<!-- @include _right-nav -->
+		%div.container
+			%div.grid.full
+				%div.line
+		%div.container
+			// secondary nav
+			%div.grid.full
+				<!-- @include _menu-nav -->
+		%div.container
+			%div.grid.full
+				%div.line
+				%p.blurb.gray Our bartenders strive for simplicity and find that most often the fewer the ingredients the better. Of special note is our selection of amari, it borders upon obsession. Be sure to keep tabs on our $5 Historical Happy Hour, which we run from 4-7pm everyday and all day on Tuesdays and Wednesdays. These lists feature mixed drinks culled from classic books through all the different eras of drinking.
+				%div.line
+		%div.container
+			// cocktail menu
+			#cocktails.menu.grid.half
+				%h2.center.line OUR MIXED DRINKS
+				%div.line.gray.item
+					%h4.dish HUSK FIZ
+					%h4.price.right$8
+					%p.description gin, coconut milk, lime leaf
+				%div.line.gray.item
+					%h4.dish NEW HAT
+					%h4.price.right$8
+					%p.description bourbon, grapefruit, honey
+				%div.line.gray.item
+					%h4.dish PENULTIMA
+					%h4.price.right$8
+					%p.description tequila, smoked tea, ginger
+				%div.line.gray.item
+					%h4.dish EVENSONG
+					%h4.price.right$8
+					%p.description rye, brandy, hard spice
+				%div.line.gray.item
+					%h4.dish BROKEN CHORD
+					%h4.price.right$8
+					%p.description bonded whiskey, amaro, sherry
+				%div.line.item
+					%h4.dish NOBLE IDEA
+					%h4.price.right$8
+					%p.description scotch, earl gray, apertivo
+
+		%div.container.instagram
+			#instafeed.grid.half.menu
+				%h2.center.line Some photos from our <a href="https://instagram.com/smallbrewpub/">Instagram feed</a>
+				<div class="insta"><a href="https://instagram.com/p/2Ma-u8tlAM/" target="blank" title="This is our Husk Fiz. It features gin, coconut milk, and kafir lime."><img src="https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xat1/t51.2885-15/11191596_626330020843999_296647390_n.jpg" /></a></div>
+
+		// footer
+		<!-- @include _footer -->
+
+		/ Scripts
+		<!-- @javascript jquery-1.9.0.min respond.min retina-1.1.0.min scripts -->
+		
+		/ HTML5 IE Enabling Script
+		/[if lt IE 9]
+			<!-- @javascript html5 -->

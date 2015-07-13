@@ -1,0 +1,61 @@
+<!-- $title Small Brewpub, Oak Cliff, TX | Food Menu -->
+<!-- $author Aaron Garcia | http://aarongarcia.com -->
+
+!!! 5
+
+%html{"dir" => "ltr", :lang => "en"}	
+	<!-- @include _head -->
+	%body#menus
+		%div.container
+			%div.grid.full
+				%div.line
+		%div.container
+			// nav
+			%div.grid.half
+				<!-- @include _main-nav -->
+		%div.container
+			%div.grid.half
+				%div.line.nav-respond
+				<!-- @include _right-nav -->
+		%div.container
+			%div.grid.full
+				%div.line
+		%div.container
+			// secondary nav
+			%div.grid.full
+				<!-- @include _menu-nav -->
+		%div.container
+			%div.grid.full
+				%div.line
+				%p.blurb.gray Our menus ebb and flow with the season and take inspiration from the farmers and ranchers that make what we do possible. We believe that seasonality and purchasing local is part of running a responsible business. Our dishes and ingredients might seem exciting but are most often rooted in classics that have slipped from our view.
+				%div.line
+		%div.container
+			%div.grid.half
+				// food menu
+				<!-- @include _food -->
+		%div.container.instagram
+			#instafeed.grid.half.menu
+				%h2.center.line Some photos from our <a href="https://instagram.com/smallbrewpub/">Instagram feed</a>
+				:javascript
+					var feed = new Instafeed({
+						get: 'user',
+						userId: 1190863475,
+						accessToken: '1190863475.467ede5.bfa9ae79b5544512976202caa4df38ea',
+						resolution: 'standard_resolution',
+						template: '<div class="insta"><a href="{{link}}" target="blank" title="{{caption}}"><img src="{{image}}" /></a></div>',
+						sortBy: 'random',
+						filter: function(image) {
+							return image.tags.indexOf('food') >= 0;
+						}
+					});
+					feed.run();
+		// footer
+		<!-- @include _footer -->
+
+
+		/ Scripts
+		<!-- @javascript jquery-1.9.0.min respond.min retina-1.1.0.min scripts -->
+		
+		/ HTML5 IE Enabling Script
+		/[if lt IE 9]
+			<!-- @javascript html5 -->

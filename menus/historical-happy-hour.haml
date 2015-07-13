@@ -1,0 +1,68 @@
+<!-- $title Small Brewpub, Oak Cliff, TX | Cocktail Menu -->
+<!-- $author Aaron Garcia | http://aarongarcia.com -->
+
+!!! 5
+
+%html{"dir" => "ltr", :lang => "en"}	
+	<!-- @include _head -->
+	%body#menu-cocktail
+		%div.container
+			%div.grid.full
+				%div.line
+		%div.container
+			// nav
+			%div.grid.half
+				<!-- @include _main-nav -->
+		%div.container
+			%div.grid.half
+				%div.line.nav-respond
+				<!-- @include _right-nav -->
+		%div.container
+			%div.grid.full
+				%div.line
+		%div.container
+			// secondary nav
+			%div.grid.full
+				<!-- @include _menu-nav -->
+		%div.container
+			%div.grid.full
+				%div.line
+		%div.container
+			%div.grid.half
+			// historical happy hour
+			#cocktails.menu
+				%h2.center.line $5 HISTORICAL HAPPY HOUR
+				%h4.line.gray Approximately every month we put together a drink list culled from historical sources, it's a fun and educational experience. Below is the catalog of books we have pulled from and recipes that you can utilize yourself at home!
+				%div.line.gray.item
+					%h4.dish HUSK FIZ
+					%h4.price.right$8
+					%p.description gin, coconut milk, lime leaf
+				%div.line.gray.item
+					%h4.dish NEW HAT
+					%h4.price.right$8
+					%p.description bourbon, grapefruit, honey
+				%div.line.gray.item
+					%h4.dish PENULTIMA
+					%h4.price.right$8
+					%p.description smoked tea, tequila, aperol
+				%div.line.gray.item
+					%h4.dish EVENSONG
+					%h4.price.right$8
+					%p.description rye, brandy, hard spice
+				%div.line.gray.item
+					%h4.dish BROKEN CHORD
+					%h4.price.right$8
+					%p.description bonded whiskey, amaro, sherry
+				%div.line.gray.item
+					%h4.dish NOBLE IDEA
+					%h4.price.right$8
+					%p.description scotch, cherry, quiquina
+		// footer
+		<!-- @include _footer -->
+
+		/ Scripts
+		<!-- @javascript jquery-1.9.0.min respond.min retina-1.1.0.min scripts -->
+		
+		/ HTML5 IE Enabling Script
+		/[if lt IE 9]
+			<!-- @javascript html5 -->

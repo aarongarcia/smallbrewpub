@@ -1,0 +1,29 @@
+/* Hyperlinks */
+
+a { 
+	color: #851432;
+	text-decoration: none;	
+	border: none;
+}
+
+a:visited { 
+	color: #851432; 
+}
+
+a.current, a.current-parent {
+	border-bottom: 3px solid #682c3b;
+}
+
+a:hover { 
+	color: #222;
+}
+
+a:focus { 
+	outline: thin dotted; 
+}
+
+p a { /* Optimized for touch devices */
+	margin: -.5em;
+	padding: .5em;
+	position: relative;
+}

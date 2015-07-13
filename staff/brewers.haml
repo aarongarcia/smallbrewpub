@@ -1,0 +1,60 @@
+<!-- $title Small Brewpub, Oak Cliff, TX | Small Stories -->
+<!-- $author Aaron Garcia | http://aarongarcia.com -->
+
+!!! 5
+
+%html{"dir" => "ltr", :lang => "en"}	
+	<!-- @include _head -->
+	%body#menu-small-beers
+		%div.container
+			%div.grid.full
+				%div.line
+		%div.container
+			// nav
+			%div.grid.half
+				<!-- @include _main-nav -->
+		%div.container
+			%div.grid.half
+				%div.line.nav-respond
+				<!-- @include _right-nav -->
+		%div.container
+			%div.grid.full
+				%div.line
+				<!-- @include _contact -->
+			%div.grid.full
+				%div.line
+		%div.container
+			// secondary nav
+			%div.grid.full
+				<!-- @include _staff-nav -->
+			%div.grid.full
+				%div.line
+		#staff.container
+			// STAFF
+			%div.grid.half
+				<!-- @placeholder 470x370 -->
+			%div.grid.half
+				.menu
+					%div.line.gray.item
+						%h4.dish Aaron J. Garcia, head brewer/GM
+						%p.description.thin-line With zero professional brewing experience.
+			%div.grid.full
+				%div.line
+			%div.grid.half
+				<!-- @placeholder 470x370 -->
+			%div.grid.half
+				.menu
+					%div.line.gray.item
+						%h4.dish Primo King, brewer
+						%p.description.thin-line With zero professional brewing experience.
+
+		// footer
+		<!-- @include _footer -->
+
+
+		/ Scripts
+		<!-- @javascript jquery-1.9.0.min respond.min retina-1.1.0.min scripts -->
+		
+		/ HTML5 IE Enabling Script
+		/[if lt IE 9]
+			<!-- @javascript html5 -->

@@ -1,0 +1,54 @@
+<!-- $title Small Brewpub, Oak Cliff, TX | Small Stories -->
+<!-- $author Aaron Garcia | http://aarongarcia.com -->
+
+!!! 5
+
+%html{"dir" => "ltr", :lang => "en"}	
+	<!-- @include _head -->
+	%body#menu-small-beers
+		%div.container
+			%div.grid.full
+				%div.line
+		%div.container
+			// nav
+			%div.grid.half
+				<!-- @include _main-nav -->
+		%div.container
+			%div.grid.half
+				%div.line.nav-respond
+				<!-- @include _right-nav -->
+		%div.container
+			%div.grid.full
+				%div.line
+		%div.container
+			%div.grid.half
+				// food menu
+			#small-beers.menu
+				%h2.center.line WE ARE A SMALL BREWERY
+				%div.line.gray.item
+					%h4.dish BLACK PEPPER PILS, spiced beer
+					%h4.dish.right 18 IBU, 13 SRM, 5.5% ABV
+					%p.description.thin-line A crisp and slightly spicy base of 95% German Bohemian Pilsner and 5% British Rye. Spiced in boil six different botanicals. Fermented with a dry English yeast strain.
+				%div.line.gray.item
+					%h4.dish Golden Saison, classic farmhouse saison
+					%h4.dish.right 20 IBU, 12 SRM, 5.6% ABV
+					%p.description.thin-line A classic belgian saison with a healthy amount of wheat, rye, and oats. Super dry finish and a spicey yeast profile.
+				%div.line.gray.item
+					%h4.dish DARK SEASON, robust saison
+					%h4.dish.right 35 IBU, 28 SRM, 7.5% ABV
+					%p.description.thin-line With malt bill that more closely resembles a stout this beer does not fit neatly into any catagories, it does however make up for it with flavor. Fermented with French and Belgian yeast strains.
+				%div.line.gray.item
+					%h4.dish ENGLISH NUT BROWN
+					%h4.dish.right 45 IBU, 24 SRM, 8.3% ABV
+					%p.description.thin-line A big nutty beer with a very complex malt profile which includes, English pale, biscuit, amber, and dark crystal malts. Hopped with American and German hops. Great to sip at the end of the night.
+
+		// footer
+		<!-- @include _footer -->
+
+
+		/ Scripts
+		<!-- @javascript jquery-1.9.0.min respond.min retina-1.1.0.min scripts -->
+		
+		/ HTML5 IE Enabling Script
+		/[if lt IE 9]
+			<!-- @javascript html5 -->

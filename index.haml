@@ -1,0 +1,48 @@
+<!-- $title Small Brewpub, Oak Cliff, TX -->
+<!-- $author Aaron Garcia | http://aarongarcia.com -->
+
+!!! 5
+
+%html{"dir" => "ltr", :lang => "en"}	
+	<!-- @include _head -->
+
+	%body#home
+		%div.container
+			%div.grid.full
+				%div.line
+		%div.container
+			// nav
+			%div.grid.half
+				<!-- @include _main-nav -->
+		%div.container
+			%div.grid.half
+				%div.line.nav-respond
+				<!-- @include _right-nav -->
+		%div.container
+			%div.grid.full
+				%div.line
+		%div.container
+			%div.grid.half
+				// pic 1
+				%img.push-up{:src => "@path 1-image-outside.jpg"}
+			%div.grid.half
+				// pic 2
+				%img.push-up{:src => "@path 2-image-charcuterie.jpg"} 
+				<a href="@path dinner.html"><img src="@path 3-image-advert.jpg" /></a> 
+		%div.container
+			%div.grid.full.blurb
+				%div.line
+		%div.container
+			%div.grid.full.blurb.gray
+				%h3.modus.first We are a neighborhood brewpub in Oak Cliff, Texas.
+				%h3.modus Proudly brewing beer, cooking unique dishes, and mixing classic drinks.
+				%h3.modus.last We would love to serve you.
+		// footer
+		<!-- @include _footer -->
+
+		/ Scripts
+		<!-- @javascript jquery-1.9.0.min respond.min retina-1.1.0.min scripts -->
+	
+		/ HTML5 IE Enabling Script
+		/[if lt IE 9]
+		<!-- @javascript html5 -->

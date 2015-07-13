@@ -1,0 +1,83 @@
+<!-- $title Small Brewpub, Oak Cliff, TX | Small Beer Menu -->
+<!-- $author Aaron Garcia | http://aarongarcia.com -->
+
+!!! 5
+
+%html{"dir" => "ltr", :lang => "en"}	
+	<!-- @include _head -->
+	%body#menu-small-beers
+		%div.container
+			%div.grid.full
+				%div.line
+		%div.container
+			// nav
+			%div.grid.half
+				<!-- @include _main-nav -->
+		%div.container
+			%div.grid.half
+				%div.line.nav-respond
+				<!-- @include _right-nav -->
+		%div.container
+			%div.grid.full
+				%div.line
+		%div.container
+			// secondary nav
+			%div.grid.full
+				<!-- @include _menu-nav -->
+		%div.container
+			%div.grid.full
+				%div.line
+				%p.blurb.gray The beautiful thing about being a Small brewery is the flexibility. While we have a few beers that stay in rotation, (Black Pepper Pils for example) beyond that it gets very interesting. We always have four on draft and they are constantly changing.
+				%div.line
+		%div.container
+			// small beer menu
+			#small-beers.menu.grid.half
+				%h2.center.line ON DRAFT NOW
+				%div.line.gray.item
+					%h4.dish BLACK PEPPER PILS, spiced beer
+					%h4.dish.right 18 IBU, 13 SRM, 5.5% ABV
+					%p.description.thin-line A crisp and slightly spicy base of 95% German Bohemian Pilsner and 5% British Rye. Spiced in boil six different botanicals. Fermented with a dry English yeast strain.
+				%div.line.gray.item
+					%h4.dish GOLDEN SAISON, classic farmhouse saison
+					%h4.dish.right 20 IBU, 12 SRM, 5.6% ABV
+					%p.description.thin-line A classic Belgian saison with a healthy amount of wheat, rye, and oats. Super dry finish and a spicy yeast profile.
+				%div.line.gray.item
+					%h4.dish DARKER SEASON, barrel aged robust saison
+					%h4.dish.right 20 IBU, 9 SRM, 6.2% ABV
+					%p.description.thin-line We took our Dark Season robust saison and aged it in Madeira barrels from our friends Haak wines down in Santa Fe, Texas. We also pitched some of our local wild yeast and added some dark candi syrup to boost the gravity a bit and give something to the wild yeast to chew on. Six months later it yielded a dry slightly sour saison with complex roasty and Belgian yeast flavors.
+				%div.line.gray.item
+					%h4.dish HOP SANDWICH, rye pale ale
+					%h4.dish.right 66 IBU, 14 SRM, 6.1% ABV
+					%p.description.thin-line A thick malty pale ale with British rye and German wheat, dry hopped extinsively with Santiam hops.
+				#beer-archive.gray-back
+					%h4.center You should also check out: <a href="@path brewery.html#beer-archive">OUR BEER ARCHIVES</a>
+					%h5.center (all the beers we've brewed before and will likely brew again)	
+		%div.container.instagram
+			#instafeed.grid.half.menu
+				%h2.center.line Some photos from our <a href="https://instagram.com/smallbrewpub/">Instagram feed</a>
+				:javascript
+					var feed = new Instafeed({
+						get: 'user',
+						userId: 1190863475,
+						limit: 60,
+						accessToken: '1190863475.467ede5.bfa9ae79b5544512976202caa4df38ea',
+						resolution: 'standard_resolution',
+						template: '<div class="insta"><a href="{{link}}" target="blank" title="{{caption}}"><img src="{{image}}" /></a></div>',
+						sortBy: 'random',
+						filter: function(image) {
+							return image.tags.indexOf('beer') >= 0;
+						}
+					});
+					feed.run();
+
+
+		// footer
+		<!-- @include _footer -->
+
+
+		/ Scripts
+		<!-- @javascript jquery-1.9.0.min respond.min retina-1.1.0.min scripts -->
+		
+		/ HTML5 IE Enabling Script
+		/[if lt IE 9]
+			<!-- @javascript html5 -->

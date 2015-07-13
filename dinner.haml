@@ -1,0 +1,48 @@
+<!-- $title Small Brewpub, Oak Cliff, TX | Small Stories -->
+<!-- $author Aaron Garcia | http://aarongarcia.com -->
+
+!!! 5
+
+%html{"dir" => "ltr", :lang => "en"}	
+	<!-- @include _head -->
+	%body#menu-small-beers
+		%div.container
+			%div.grid.full
+				%div.line
+		%div.container
+			// nav
+			%div.grid.half
+				<!-- @include _main-nav -->
+		%div.container
+			%div.grid.half
+				%div.line.nav-respond
+				<!-- @include _right-nav -->
+		%div.container
+			%div.grid.full
+				%div.line
+				%h4.center PLEASE SCROLL DOWN TO PURCHASE TICKETS
+				%div.line
+		%div.container
+			%div.grid.full
+				%img{:src => "@path South-Texas-Heritage-Pork.png"}
+		%div.container
+			%div.grid.full
+				%div.line
+		%div.container
+			%div.grid.half
+				<a href="https://squareup.com/market/small-brewpub/south-texas-heritage-dinner" class="sq-embed-item"> online</a>
+				<script src="https://cdn.sq-api.com/market/embed.js" charset="utf-8"></script>
+			%div.grid.half
+				<a href="https://squareup.com/market/small-brewpub/south-texas-heritage-dinner-non-alchoholic" class="sq-embed-item"> online</a>
+
+
+		// footer
+		<!-- @include _footer -->
+
+
+		/ Scripts
+		<!-- @javascript jquery-1.9.0.min respond.min retina-1.1.0.min scripts -->
+		
+		/ HTML5 IE Enabling Script
+		/[if lt IE 9]
+			<!-- @javascript html5 -->
