@@ -4,7 +4,7 @@
   font-family: 'Pathway Gothic One';
   font-style: normal;
   font-weight: 400;
-  src: local('Pathway Gothic One'), local('PathwayGothicOne-Regular'), url(assets/fonts/pathwaygothicone/v4/Lqv9ztoTUV8Q0FmQZzPqaCwPNT-0fYl5GOmbcpnDW5g.woff) format('woff');
+  src: local('Pathway Gothic One'), local('PathwayGothicOne-Regular'), url(../fonts/Lqv9ztoTUV8Q0FmQZzPqaCwPNT-0fYl5GOmbcpnDW5g.woff) format('woff');
 }
 
 body {
