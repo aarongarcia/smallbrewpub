@@ -1,0 +1,65 @@
+<!-- $title Small Brewpub, Oak Cliff, TX | Food Menu -->
+<!-- $author Aaron Garcia | http://aarongarcia.com -->
+
+!!! 5
+
+%html{"dir" => "ltr", :lang => "en"}	
+	<!-- @include _head -->
+	%body#menus
+		%div.container
+			%div.grid.full
+				%div.line
+		%div.container
+			// nav
+			%div.grid.half
+				<!-- @include _main-nav -->
+		%div.container
+			%div.grid.half
+				%div.line.nav-respond
+				<!-- @include _right-nav -->
+		%div.container
+			%div.grid.full
+				%div.line
+				%p.blurb.gray This is our current pre-fix dinner menu.
+				%div.line
+		%div.container
+			%div.grid.full
+				<div id="wufoo-r1ke3dp71h6j1pn">
+				Fill out my <a href="https://smallbrewpub.wufoo.com/forms/r1ke3dp71h6j1pn">online form</a>.
+				</div>
+				<div id="wuf-adv" style="font-family:inherit;font-size: small;color:#a7a7a7;text-align:center;display:block;">HTML Forms powered by <a href="http://www.wufoo.com">Wufoo</a>.</div>
+				<script type="text/javascript">var r1ke3dp71h6j1pn;(function(d, t) {
+				var s = d.createElement(t), options = {
+				'userName':'smallbrewpub',
+				'formHash':'r1ke3dp71h6j1pn',
+				'autoResize':true,
+				'height':'771',
+				'async':true,
+				'host':'wufoo.com',
+				'header':'show',
+				'ssl':true};
+				s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+				s.onload = s.onreadystatechange = function() {
+				var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+				try { r1ke3dp71h6j1pn = new WufooForm();r1ke3dp71h6j1pn.initialize(options);r1ke3dp71h6j1pn.display(); } catch (e) {}};
+				var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+				})(document, 'script');</script>
+
+		%div.container.instagram
+			#instafeed.grid.half.menu
+				%h2.center.line Some photos from our <a href="https://instagram.com/smallbrewpub/">Instagram feed</a>
+				:javascript
+					var feed = new Instafeed({
+						get: 'user',
+						userId: 1190863475,
+						accessToken: '1190863475.467ede5.bfa9ae79b5544512976202caa4df38ea',
+						resolution: 'standard_resolution',
+						template: '<div class="insta"><a href="{{link}}" target="blank" title="{{caption}}"><img src="{{image}}" /></a></div>',
+						sortBy: 'random',
+						filter: function(image) {
+							return image.tags.indexOf('food') >= 0;
+						}
+					});
+					feed.run();
+		// footer
+		<!-- @include _footer -->
