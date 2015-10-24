@@ -53,3 +53,7 @@ p, ul, blockquote, pre, td, th, label {
 small, aside {
 	font-size: 0.77273em;
 }
+
+.short.blurb.gray {
+	padding: .5em 3em;
+}
