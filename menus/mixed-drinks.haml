@@ -61,7 +61,20 @@
 		%div.container.instagram
 			#instafeed.grid.half.menu
 				%h2.center.line Some photos from our <a href="https://instagram.com/smallbrewpub/">Instagram feed</a>
-				<div class="insta"><a href="https://instagram.com/p/2Ma-u8tlAM/" target="blank" title="This is our Husk Fiz. It features gin, coconut milk, and kafir lime."><img src="https://igcdn-photos-h-a.akamaihd.net/hphotos-ak-xat1/t51.2885-15/11191596_626330020843999_296647390_n.jpg" /></a></div>
+				:javascript
+					var feed = new Instafeed({
+						get: 'user',
+						userId: 1190863475,
+						limit: 60,
+						accessToken: '1190863475.467ede5.bfa9ae79b5544512976202caa4df38ea',
+						resolution: 'standard_resolution',
+						template: '<div class="insta"><a href="{{link}}" target="blank" title="{{caption}}"><img src="{{image}}" /></a></div>',
+						sortBy: 'random',
+						filter: function(image) {
+							return image.tags.indexOf('cocktails') >= 0;
+						}
+					});
+					feed.run();
 
 		// footer
 		<!-- @include _footer -->
